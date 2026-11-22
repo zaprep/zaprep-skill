@@ -26,9 +26,26 @@ Then run `/mcp`, pick `zaprep` and sign in with your Zaprep account.
 1. Add the connector: Settings → Connectors → Add custom connector → `https://www.zaprep.com/api/mcp`, then sign in.
 2. Add the skill: download this repo as a ZIP, zip the `skills/zaprep` folder on its own, and upload it in Settings → Capabilities → Skills.
 
-### Other AI tools (ChatGPT, Cursor, Codex, Gemini and more)
+### Gemini CLI
 
-Connect `https://www.zaprep.com/api/mcp` as a remote MCP server (setup guides at [zaprep.com/mcp](https://www.zaprep.com/mcp)). If your tool supports skills or custom instructions, add the contents of `skills/zaprep/SKILL.md`.
+```
+gemini extensions install https://github.com/zaprep/zaprep-skill
+```
+
+This adds the Zaprep MCP server and loads the skill as context. Then sign in to the `zaprep` server with your Zaprep account (in Gemini CLI, run `/mcp` to see its status).
+
+### Codex
+
+```
+codex mcp add zaprep --url https://www.zaprep.com/api/mcp
+codex mcp login zaprep
+```
+
+Copy `AGENTS.md` (and the `skills` folder) into your project, or paste the skill into your instructions.
+
+### ChatGPT, Cursor and other AI tools
+
+Connect `https://www.zaprep.com/api/mcp` as a remote MCP server (setup guides at [zaprep.com/mcp](https://www.zaprep.com/mcp)). The server sends its own usage rules to every client, so it works without the skill; if your tool supports skills or custom instructions, add `skills/zaprep/SKILL.md` for the full guide.
 
 ## Try it
 

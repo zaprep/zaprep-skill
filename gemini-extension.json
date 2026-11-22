@@ -1,0 +1,11 @@
+{
+  "name": "zaprep",
+  "version": "1.0.0",
+  "description": "Instagram and Facebook comment-to-DM automation, inbox and insights with Zaprep.",
+  "mcpServers": {
+    "zaprep": {
+      "httpUrl": "https://www.zaprep.com/api/mcp"
+    }
+  },
+  "contextFileName": "skills/zaprep/SKILL.md"
+}
