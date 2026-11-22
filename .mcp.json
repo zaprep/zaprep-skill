@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "zaprep": {
+      "type": "http",
+      "url": "https://www.zaprep.com/api/mcp"
+    }
+  }
+}

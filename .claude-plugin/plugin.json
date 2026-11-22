@@ -1,0 +1,22 @@
+{
+  "name": "zaprep",
+  "version": "1.0.0",
+  "description": "Set up Instagram and Facebook automations (comment-to-DM, DM keywords, Follow Gate, email capture), read your inbox and report on insights with Zaprep. Adds the Zaprep MCP server and a skill that teaches Claude how to use it safely.",
+  "author": {
+    "name": "Zaprep",
+    "url": "https://www.zaprep.com"
+  },
+  "homepage": "https://www.zaprep.com/mcp",
+  "repository": "https://github.com/zaprep/zaprep-skill",
+  "license": "MIT",
+  "keywords": [
+    "instagram",
+    "facebook",
+    "automation",
+    "comment-to-dm",
+    "dm",
+    "mcp",
+    "social-media"
+  ],
+  "privacyPolicyUrl": "https://www.zaprep.com/privacy"
+}

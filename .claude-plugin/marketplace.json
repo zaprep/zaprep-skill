@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "zaprep",
+  "description": "Instagram and Facebook comment-to-DM automation for Claude, powered by Zaprep.",
+  "owner": {
+    "name": "Zaprep",
+    "url": "https://www.zaprep.com"
+  },
+  "plugins": [
+    {
+      "name": "zaprep",
+      "description": "Set up Instagram and Facebook automations (comment-to-DM, DM keywords, Follow Gate, email capture), read your inbox and report on insights with Zaprep.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
