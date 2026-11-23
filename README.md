@@ -10,6 +10,8 @@ This repo contains:
 
 You need a Zaprep account (the Free plan works) with an Instagram professional account or Facebook Page connected.
 
+WhatsApp numbers are in beta: once Zaprep support enables it for your workspace, Claude can set up DM keyword replies and email capture on WhatsApp and read those chats in your inbox.
+
 ## Install
 
 ### Claude Code

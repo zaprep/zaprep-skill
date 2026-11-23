@@ -73,6 +73,26 @@ For any automation that fires but does not send, call `troubleshoot_automation` 
 
 Set `triggerConfig.require_follow: true` to send the main DM only to followers. Non-followers get a "follow us, then tap I'm following" message first. Options: `gate_skip_dm_for_followers`, `gate_show_to_followers`. Not available on Facebook Pages or the Free plan.
 
+## WhatsApp (beta)
+
+WhatsApp numbers appear in `list_accounts` with `platform: "whatsapp"` only for workspaces in the beta. If the user asks about WhatsApp and no such account is listed, tell them it is in beta and Zaprep support can turn it on.
+
+- Only the `dm` trigger, with `send_dm` and `ask_email` actions. No posts, comments, story triggers or Follow Gate.
+- Use at most one link button per DM: WhatsApp shows one link button; extra links are written into the message text.
+- Zaprep only replies to messages people send to the number. It cannot start conversations or send broadcasts.
+- Needs a paid plan.
+- Inbox tools (`list_conversations`, `get_conversation_messages`) include WhatsApp chats.
+
+```json
+{
+  "accountId": "<whatsapp account from list_accounts>",
+  "name": "MENU on WhatsApp",
+  "triggerType": "dm",
+  "triggerConfig": { "keywords": ["menu"] },
+  "actions": [{ "type": "send_dm", "message": "Hi {{first_name}}! Here's our menu:", "buttons": [{ "title": "See menu", "url": "https://example.com/menu" }] }]
+}
+```
+
 ## Reporting
 
 - Account growth: `get_account_insights` (Instagram, `days` 7, 30 or 90). If `insightsAvailable` is false, the account needs reconnecting to grant insights.
